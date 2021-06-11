@@ -1,15 +1,15 @@
 import "./App.css";
-// import Carousel from "./Carousel";
-// import MultiItemCarousel from "./MultiItemCrousel";
-import BootstrapMultiCarousel from "./BootstrapMulti";
+import Carousel from "./Carousel";
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Carousel /> */}
-      {/* <MultiItemCarousel /> */}
-      <BootstrapMultiCarousel />
-    </div>
+      
+      <div className="box">
+      <Carousel />
+      </div>
+   </div>
   );
 }
 

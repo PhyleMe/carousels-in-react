@@ -1,6 +1,12 @@
+.img{
+  width: 200px;
+  height: auto;
+}
+
+
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
-  background: #fcfcfc;
+ 
   width: 47px;
   height: 104px;
   display: flex;

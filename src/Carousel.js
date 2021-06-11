@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./carousel.css";
 import { data } from "./data";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
+import seven from "./assets/images/seven.jpg";
 
 const PreviousBtn = (props) => {
   console.log(props);
@@ -25,11 +26,14 @@ const NextBtn = (props) => {
 
 const Carousel = () => {
   return (
-    <div style={{ margin: "30px" }}>
-      <h1>Basic carousel</h1>
+    <div style={{ margin: "30px"}}>
+      <img src={seven} alt= "Token" className="center"/>
+      <h1>AGORA</h1>
+      <p>This is the bio about the token.</p>
+    <br></br>
+      <h1>Exchange with</h1>
       <Slider
-        autoplay
-        autoplaySpeed={2000}
+       
         // dots
         initialSlide={2}
         infinite
@@ -42,10 +46,10 @@ const Carousel = () => {
                 src={data[i]}
                 alt=""
                 style={{
-                  width: "50px",
-                  height: "50px",
-                  objectFit: "cover",
-                  borderRadius: "10px",
+                  width: "300px",
+                  height: "auto",
+                   objectFit: "cover",
+                 
                 }}
               />
             </div>
@@ -55,7 +59,7 @@ const Carousel = () => {
       >
         {data.map((item) => (
           <div>
-            <img src={item} alt="" style={{ width: "100%", height: "40vh" }} />
+            <img src={item} alt="" style={{ width: "50%", height: "auto",marginLeft:"auto",marginRight:"auto" }} />
           </div>
         ))}
       </Slider>
